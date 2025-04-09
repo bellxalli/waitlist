@@ -50,6 +50,26 @@ public class Waitlist {
     // Where n is studentIds.length
 
     // Don't forget to write tests too!
+
+    /* possible solution like time and space complexity practice
+    
+    if(nums.length == 0)
+      return -1;
+
+    int count = 0;
+    int possibleNum = 0;
+
+    //finding the num that shows up most (tiebreaker built in)  
+    for(int i = nums.length-1; i >= 0; i--)
+    {
+      if(count == 0) //starting number and finding recurring num
+        possibleNum = nums[i];
+      if(nums[i] == possibleNum) //checking if num[i] value has already appeared, ++
+        count ++;
+      if(nums[i] != possibleNum) //if it hasn't appeared then --
+        count--;
+    }
+     */
   }
 
   /**
