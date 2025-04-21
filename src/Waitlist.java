@@ -60,7 +60,8 @@ public class Waitlist {
 
       if(studentIds[i] == "") //shifting everything down
       {
-        studentIds[i] = studentIds[i+1];
+        if(i != studentIds.length-1) //checking out of bounds
+          studentIds[i] = studentIds[i+1];
       }
       i++;
     }
